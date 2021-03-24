@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL lua_version="5.1"
-LABEL asterisk_major_version="16"
+LABEL asterisk_major_version="18"
 LABEL maintainer="Evgeniy Gostkov <gostkov.evg@gmail.com>"
 
 ENV BIND_PORT=5060

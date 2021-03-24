@@ -1,8 +1,8 @@
-# Asterisk 16 
+# Asterisk 18 
 
 ### Description
 
-The docker image with Asterisk PBX latest 16 version (LTS) and Lua. Image based on CentoOS
+The docker image with Asterisk PBX latest 18 version (LTS) and Lua. Image based on CentoOS
 
 This image contains asterisk with pbx_lua module, chan_pjsip, lua interpreter with useful libs.
 
@@ -19,13 +19,13 @@ For example. We can run container which will use host networking and mount direc
 + /var/log/asterisk
 
 ```bash
-docker run --name asterisk16 -d \
+docker run --name asterisk18 -d \
 --net=host \
 --mount source=ast-etc-vol,destination=/etc/asterisk \
 --mount source=ast-spool-vol,destination=/var/spool/asterisk \
 --mount source=ast-lib-vol,destination=/var/lib/asterisk \
 --mount source=ast-logs-vol,destination=/var/log/asterisk \
-gostkov/asterisk:16
+gostkov/asterisk:18
 ```
 In this example all files from asterisk container will be available in host volumes for edit.
 Volumes directory you can find there
